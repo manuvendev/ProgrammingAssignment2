@@ -1,6 +1,5 @@
 ## makeCacheMatrix: is in charge of initializing a matrix object
 ## and its methods, both setters and getters, for itself and its inverse.
-
 makeCacheMatrix <- function(x = matrix()) {
     inverse <- NULL
     set <- function(y) {
@@ -19,7 +18,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve: retrieves the inverse of a matrix.
 ## If the inverse of this matrix has been previously computed
 ## it gets returned, otherwise it is computed and then set for future computations.
-
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     inv <- x$getinverse()
